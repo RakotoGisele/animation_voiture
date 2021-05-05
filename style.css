@@ -1,0 +1,41 @@
+.globale{
+    width: 1280px;
+    height: 425px;
+}
+.voiture{
+    margin-left: 20%;
+    transform: translate(10px, 10px);
+    
+}
+
+.voiture_roue_arriere {
+    left: 57%;
+    top: 19%;
+    position:absolute;
+    z-index: 1;
+    -webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(359deg);
+    }
+    to {
+            -webkit-transform: rotate(0deg);
+    }
+}
+
+.voiture_roue_avant{
+    top: 19%;
+    left: 28%;
+    position: absolute;
+    z-index: 2;
+    -webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
